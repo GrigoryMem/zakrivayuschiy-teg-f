@@ -4,3 +4,44 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/* theme-light */
+
+.theme-light:root {
+  --fw-text: 400;
+  --fw-title: 700;
+  --background-color: #FFF;
+  --main-color: #000;
+}
+
+.theme-dark:root {
+  --fw-text: 465;
+  --fw-title: 785;
+  --background-color: #000;
+  --main-color: #00CC14;
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root  {
+    --fw-text: 400;
+    --fw-title: 700;
+    --background-color: #FFF;
+    --main-color: #000;
+  }
+}
+
+/* theme-dark  */
+
+
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --fw-text: 465;
+    --fw-title: 785;
+    --background-color: #000;
+    --main-color: #00CC14;
+  }
+}
+
