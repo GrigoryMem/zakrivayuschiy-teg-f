@@ -12,16 +12,14 @@
   --fw-title: 700;
   --background-color: #FFF;
   --main-color: #000;
-  --active-color:#666666;
 }
 
 .theme-dark:root {
   --fw-text: 465;
   --fw-title: 785;
   --background-color: #000;
-  --green-color:0,204,20;
-  --main-color: rgba(var(--green-color),1);
-  --active-color: rgba(var(--green-color),0.5);
+  --main-color: #00CC14;
+
   
 }
 
@@ -32,7 +30,6 @@
     --fw-title: 700;
     --background-color: #FFF;
     --main-color: #000;
-    --active-color:#666666;
   }
 }
 
@@ -42,9 +39,8 @@
     --fw-text: 465;
     --fw-title: 785;
     --background-color: #000;
-    --green-color:0,204,20;
-    --main-color: rgba(var(--green-color),1);
-    --active-color: rgba(var(--green-color),0.5);
+    --main-color: #00CC14;
+ 
   }
 }
 
