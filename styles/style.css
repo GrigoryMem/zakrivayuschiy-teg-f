@@ -17,6 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  /* dvb? */
   font-family: var(--main-font, 'Inter Variable'), sans-serif;
   font-variation-settings: "wght", var(--fw-text, 400);
   background-color: var(--background-color, #fff);
@@ -25,10 +26,81 @@
   background-attachment: fixed;
   background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px,transparent 2px 4px),
   repeating-linear-gradient(to bottom, #e7e7e7 0 2px,#1a1a1a 2px 4px);
-  
- 
-
-   /* background-image: repeating-linear-gradient(to right, #000 0 2px ,transparent 2px 4px),
+  /* background-image: repeating-linear-gradient(to right, #000 0 2px ,transparent 2px 4px),
   repeating-linear-gradient(to bottom, #007f0c 0 2px,#000 2px 4px);  */
+}
 
+/* .header */
+
+.header {
+  background-color: var(--background-color);
+  font-family: var(--accent-font,'Press Start 2P');
+  line-height: 1;
+  font-weight: var(--fw-text, 400);
+  text-align:center;
+  margin-block: 100px;
+  padding-block: clamp(7.5rem, 7.148rem + 1.5vw, 8.5rem) 25px;
+  border: 2px solid var(--main-color, #000);
+}
+
+.header__logo {
+  font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.theme-menu {
+}
+
+.header__theme-menu {
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.theme-menu__item {
+text-align: left;
+padding-inline-start: 15px;
+}
+
+@media (max-width:700px) {
+
+  .theme-menu__item {
+    padding-inline-start: 25px;
+  }
+}
+
+
+.theme-menu__button {
+  text-transform: uppercase;
+  display: block;
+}
+
+.theme-menu__button:disabled {
+  color:  var(--active-color, #666);
+  position: relative;
+  transition-duration: .5s;
+}
+
+.theme-menu__button:disabled::before {
+  content:"▶";
+  position: absolute;
+  inline-size: 14px;
+  aspect-ratio: 1;
+  inset:0;
+  inset-inline-start: -22px;
+  color: var(--active-color, #666);
 }
