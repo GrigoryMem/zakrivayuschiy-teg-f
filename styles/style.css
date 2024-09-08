@@ -190,7 +190,7 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   }
 }
 
-.card__image img{
+.card__image img {
   position: relative;
   z-index: 5;
   inline-size: 100%;
@@ -225,11 +225,13 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 
 .card__like-button {
   position: relative;
+  background-color: var(--background-color, #fff);
   padding: 11px 34px;
   border: 2px solid  var(--main-color, #000);
   transition: box-shadow 0.3s ease;
   overflow: hidden;
   z-index: 5;
+ 
 }
 
 .card__like-button:focus-visible, 
@@ -238,22 +240,31 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 }
 
 .card__like-button::before,
-.footer__button:before{
+.footer__button:before {
     content: "";
     position: absolute;
     inset:0;
     width: 100%;
     block-size: 100%;
     transform:translateX(-100%);
-    background-color:currentColor;
-    z-index: 1000;
+    background-color:var(--background-color);
+    z-index: 7;
     transition: transform 0.5s ease-in-out;
+    mix-blend-mode: difference;
+    
 }
 
 .card__like-button:hover::before,
 .footer__button:hover::before {
   transform:translateX(0);
 }
+
+.card__like-button:hover .button__text,
+.footer__button:hover .button__text {
+  color:var(--background-color);
+  
+}
+
 
 .card__icon-button {
   padding-top: 10px;
@@ -265,15 +276,17 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 
 .button__text {
   display: block;
-
- }
+  position: relative;
+  z-index: 50;
+  
+}
 
 .text-like  {
   font-family: var(--accent-font, 'Press Start 2P'), system-ui, fantasy;
   font-weight:400;
   line-height: 0.9;
   font-size: 14px;
- 
+  transition: color 0.5s ease-in-out;
 }
 
 
@@ -292,7 +305,6 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   position: relative;
   font-family: var(--accent-font,'Press Start 2P'), system-ui, fantasy;
   font-weight: var(--fw-text,400);
-  color: var(--main-color, #000);
   display: flex;
   font-size: 14px;
   line-height: 0.9;
@@ -303,6 +315,7 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   padding: 15px 19px;
   transition: box-shadow 0.3s ease;
   overflow: hidden;
+  z-index: 5;
 }
 
 .footer__icon-button {
