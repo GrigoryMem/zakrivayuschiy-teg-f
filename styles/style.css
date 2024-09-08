@@ -24,14 +24,16 @@
   color: var(--main-color, #000);
   background-size: cover;
   background-attachment: fixed;
-  background-image: var(--background-image);
+  background-image: var(--background-image, repeating-linear-gradient(to right, #d3d3d3 0 2px,transparent 2px 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3 0 2px,transparent 2px 4px),
+  linear-gradient(to bottom, #e7e7e7 0.01%,#1a1a1a));
 }
 
 /* .header */
 
 .header {
   background-color: var(--background-color);
-  font-family: var(--accent-font,'Press Start 2P');
+  font-family: var(--accent-font,'Press Start 2P'), system-ui, fantasy;
   line-height: 1;
   font-weight: var(--fw-text, 400);
   text-align:center;
@@ -117,6 +119,40 @@ padding-inline-start: 15px;
   padding:4px 10px 5px;
 }
 
+.card__wrapper {
+  position: relative;
+  inset:0;
+}
+
+.card__wrapper::after {
+  content: "</HTML>";
+  position: absolute;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+  font-size:14px;
+  line-height: 1;
+  font-family: var(--accent-font,'Press Start 2P'), system-ui, fantasy;
+  font-weight: var(--fw-text);
+  color: var(--main-color);
+  z-index: 1000;
+  mix-blend-mode: hard-light;
+  text-shadow:
+   -1px 0 var(--background-color, #fff),
+    0 1px var(--background-color, #fff),
+    1px 0 var(--background-color, #fff),
+    0 -1px var(--background-color, #fff);
+}
+
+@supports((text-stroke: 1px var(--background-color,#fff)) 
+or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
+  
+  .card__wrapper::after {
+    -webkit-text-stroke:  1px var(--background-color,#fff);
+    text-stroke:  1px var(--background-color,#fff);
+    text-shadow: none;
+  }
+}
+
 .card__image img{
   inline-size: 100%;
   object-fit: cover;
@@ -154,7 +190,7 @@ padding-inline-start: 15px;
 }
 
 .button__text {
-  font-family: var(--accent-font, 'Press Start 2P');
+  font-family: var(--accent-font, 'Press Start 2P'), system-ui, fantasy;
   font-weight:400;
   line-height: 0.9;
   font-size: 14px;
