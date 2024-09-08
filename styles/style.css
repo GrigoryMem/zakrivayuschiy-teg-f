@@ -119,28 +119,28 @@ padding-inline-start: 15px;
   padding:4px 10px 5px;
 }
 
-.card__wrapper {
+.card__image {
   position: relative;
   inset:0;
 }
 
-.card__wrapper::after {
-  content: "</HTML>";
+.card__label {
+
   position: absolute;
   inset-inline-end: 25px;
   inset-block-start: 25px;
   font-size:14px;
   line-height: 1;
   font-family: var(--accent-font,'Press Start 2P'), system-ui, fantasy;
-  font-weight: var(--fw-text);
-  color: var(--main-color);
+  font-weight: var(--fw-text,400);
+  color: var(--main-color, #000);
   z-index: 1000;
-  mix-blend-mode: hard-light;
   text-shadow:
    -1px 0 var(--background-color, #fff),
     0 1px var(--background-color, #fff),
     1px 0 var(--background-color, #fff),
     0 -1px var(--background-color, #fff);
+    mix-blend-mode: hard-light;
 }
 
 @supports((text-stroke: 1px var(--background-color,#fff)) 
@@ -154,6 +154,8 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 }
 
 .card__image img{
+  position: relative;
+  z-index: 5;
   inline-size: 100%;
   object-fit: cover;
   object-position: center;
