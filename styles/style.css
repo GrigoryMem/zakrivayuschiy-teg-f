@@ -80,10 +80,10 @@ padding-inline-start: 15px;
 .theme-menu__button {
   text-transform: uppercase;
   display: block;
+  color:  var(--main-color, #000);
 }
 
 .theme-menu__button:disabled {
-  color:  var(--main-color, #000);
   position: relative;
   transition-duration: .5s;
   opacity:0.6;
@@ -97,6 +97,11 @@ padding-inline-start: 15px;
   inset:0;
   inset-inline-start: -22px;
   color: var(--main-color, #000);
+  
+}
+
+.theme-menu__button:disabled,
+.theme-menu__button:hover {
   opacity:0.6;
 }
 
