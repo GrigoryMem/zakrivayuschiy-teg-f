@@ -125,7 +125,6 @@ padding-inline-start: 15px;
 }
 
 .card__label {
-
   position: absolute;
   inset-inline-end: 25px;
   inset-block-start: 25px;
@@ -140,7 +139,8 @@ padding-inline-start: 15px;
     0 1px var(--background-color, #fff),
     1px 0 var(--background-color, #fff),
     0 -1px var(--background-color, #fff);
-    mix-blend-mode: hard-light;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
 }
 
 @supports((text-stroke: 1px var(--background-color,#fff)) 
