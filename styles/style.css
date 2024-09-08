@@ -278,6 +278,9 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 }
 
 .footer__button {
+  font-family: var(--accent-font,'Press Start 2P'), system-ui, fantasy;
+  font-weight: var(--fw-text,400);
+  color: var(--main-color, #000);
   display: flex;
   font-size: 14px;
   line-height: 0.9;
