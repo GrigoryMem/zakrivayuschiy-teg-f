@@ -238,10 +238,12 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 .card__like-button {
   padding: 11px 34px;
   border: 2px solid  var(--main-color, #000);
+  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button:focus-visible, .footer__button:focus-visible {
   box-shadow: 2px 2px 0 var(--main-color);
+  
 }
 
 .card__icon-button {
@@ -289,6 +291,7 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   background-color: var(--background-color, #fff);
   border: 2px solid  var(--main-color, #000);
   padding: 15px 19px;
+  transition: box-shadow 0.3s ease;
 }
 
 .footer__icon-button {
