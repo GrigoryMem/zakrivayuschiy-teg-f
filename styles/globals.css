@@ -60,6 +60,11 @@ ol {
   cursor: pointer;
 }
 
+.button:focus,
+.button:focus-visible {
+  outline: none;
+}
+
 .content-size {
   margin: auto;
   inline-size:min(100%, var(--layout-size, 700px));
