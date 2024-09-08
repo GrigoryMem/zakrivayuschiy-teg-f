@@ -236,7 +236,7 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 
 .card__like-button:focus-visible, 
 .footer__button:focus-visible {
-  box-shadow: 2px 2px 0 var(--main-color);
+  box-shadow: 2px 2px 0 var(--main-color, #000);
 }
 
 .card__like-button::before,
@@ -247,7 +247,7 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
     width: 100%;
     block-size: 100%;
     transform:translateX(-100%);
-    background-color:var(--background-color);
+    background-color:var(--accent-color, #fff);
     z-index: 7;
     transition: transform 0.5s ease-in-out;
     mix-blend-mode: difference;
