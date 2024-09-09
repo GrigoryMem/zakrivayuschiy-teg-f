@@ -98,21 +98,34 @@
     </main>
     <footer class="footer content-size">
       <button class="footer__button button">
-        <span class="footer__icon-button">
-          <svg class="save-icon" viewBox="0 0 21 21">
-            <use class="save-icon-use" href="./svg/floppy.svg#floppy">
+        <span class="footer__icon-button floppy">
+          <svg class="floppy-icon" viewBox="0 0 21 21">
+            <use class="floppy-icon-inner" href="./svg/floppy.svg#floppy">
           </svg>
         </span>
         <span class="button__text text-like">
-          
-          
-       
           Сохранить на память
         </span>
       </button>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
+  <dialog open class="dialog">
+    <div class="dialog__message">
+      <div class="floppy">
+        <svg class="floppy-icon"viewBox="0 0 21 21">
+          <use class="floppy-icon-inner" href="./svg/floppy.svg#floppy">
+        </svg>
+      </div>
+      <div class="dialog__text">
+        Вставьте <br> дискету, чтобы <br> продолжить
+      </div>
+    </div>
+    <button class="dialog__button button">
+      <span class="button__text">ок</span>
+      
+    </button>
+  </dialog>
 </html>
 
 
