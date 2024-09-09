@@ -283,12 +283,30 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   height: 24px; */
 }
 
+.like-icon:hover .core {
+  opacity: 1;
+  transition: opacity 0.3s 0 linear;
+}
+
+.like-icon:hover .main-body {
+  opacity: 1;
+  transition: opacity 0.3s 0.05s linear;
+}
+
 .contour {
+  
 }
+
 .main-body {
+  opacity: 0;
+  transition: opacity 0.3s 0 linear;
 }
+
 .core {
+  opacity: 0;
+  transition: opacity 0.3s 0.03s linear;
 }
+
 .sparks {
   opacity: 0;
 }
