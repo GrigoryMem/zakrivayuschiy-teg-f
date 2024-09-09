@@ -150,9 +150,13 @@ padding-inline-start: 15px;
   border: 2px solid var(--main-color, #000);
 }
 
+.card:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 .card__title {
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.21;
   padding:4px 10px 5px;
 }
 
@@ -210,6 +214,8 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 
 .card__text {
   font-size: 18px;
+  line-height: 1.16;
+  
 }
 
 .card__text p:not(:last-child) {
@@ -383,7 +389,7 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 .text-like  {
   font-family: var(--accent-font, 'Press Start 2P'), system-ui, fantasy;
   font-weight:400;
-  line-height: 0.9;
+  line-height: 0.8;
   font-size: 14px;
   transition: color 0.5s ease-in-out;
 }
@@ -397,7 +403,7 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-block: 52px 105px;
+  padding-block: 50px 105px;
 }
 
 .footer__button {
