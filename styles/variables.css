@@ -8,10 +8,7 @@
   --background-color: #FFF;
   --main-color: #000;
   /* svg */
-  --sparks-color: #FF0000;
-  --core-color:var(--main-color);
-  --fill-body:var(--main-color);
-  --contour: var(--main-color);
+
 
 
   --accent-color: var(--background-color);
