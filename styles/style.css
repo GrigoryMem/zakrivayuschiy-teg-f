@@ -226,7 +226,8 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 .card__like-button {
   position: relative;
   background-color: var(--background-color, #fff);
-  padding: 9px 31px;
+  padding: 13px 0;
+  min-width: 130px;
   border: 2px solid currentColor;
   transition: box-shadow 0.3s ease;
   overflow: hidden;
@@ -269,11 +270,6 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   width: 31px;
   height: 31px;
   aspect-ratio: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* padding-top: 10px; */
 }
 
 .card__icon-button:focus-visible {
