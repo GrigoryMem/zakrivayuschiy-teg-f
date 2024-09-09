@@ -297,8 +297,7 @@
 }
 
 .card__like-button:hover .button__text,
-.footer__button:hover .button__text,
-.dialog__button:hover .button__text {
+.footer__button:hover .button__text {
   color: var(--background-color, #fff);
 }
 
@@ -513,7 +512,7 @@ dialog::backdrop {
 }
 
 @media (width<=375px) {
-  
+
   .card__image img {
     max-height: 375px;
   }
