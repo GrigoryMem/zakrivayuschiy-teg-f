@@ -267,16 +267,15 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
 }
 
 .card__icon-button {
-  width: 38px;
-  height: 38px;
-  aspect-ratio: 1;
-
+  inline-size: 38px;
+  block-size: 38px;
+  outline: 2px solid transparent;
+  transition:outline 0.3s ease;
   
 }
 
-.card__icon-button {
+.card__icon-button:focus-visible {
   outline: 2px solid currentColor;
- 
 }
 
 .like-icon {
