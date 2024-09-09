@@ -64,7 +64,7 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button button center-align">
+            <button type="button" class="card__icon-button button center-align">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <style>
                   :root {
@@ -88,7 +88,7 @@
               </svg>
               
             </button>
-            <button class="card__like-button button center-align">
+            <button type="button" class="card__like-button button center-align">
               <span class="button__text text-like">Like</span>
              </button>
           </div>
@@ -97,7 +97,12 @@
       </article>
     </main>
     <footer class="footer content-size">
-      <button class="footer__button button">
+      <button 
+        type="button" 
+        onclick="window['dialog'].showModal()" 
+        aria-controls="dialog"
+      
+      class="footer__button button">
         <span class="footer__icon-button floppy">
           <svg class="floppy-icon" viewBox="0 0 21 21">
             <use class="floppy-icon-inner" href="./svg/floppy.svg#floppy">
@@ -110,7 +115,7 @@
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
-  <dialog open class="dialog">
+  <dialog aria-label="Coхранить на дискету" id="dialog" class="dialog">
     <div class="dialog__message">
       <div class="floppy">
         <svg class="floppy-icon"viewBox="0 0 21 21">
@@ -121,7 +126,9 @@
         Вставьте <br> дискету, чтобы <br> продолжить
       </div>
     </div>
-    <button class="dialog__button button">
+    <button type="button" 
+    onclick="window['dialog'].close()"
+    class="dialog__button button close">
       <span class="button__text">ок</span>
       
     </button>
