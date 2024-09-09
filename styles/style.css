@@ -513,6 +513,7 @@ dialog::backdrop {
 }
 
 @media (width<=375px) {
+  
   .card__image img {
     max-height: 375px;
   }
