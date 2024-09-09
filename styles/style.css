@@ -283,6 +283,16 @@ or ( -webkit-text-stroke: 1px var(--background-color,#fff))) {
   height: 24px; */
 }
 
+.contour {
+}
+.main-body {
+}
+.core {
+}
+.sparks {
+  opacity: 0;
+}
+
 
 /* ????? */
 /* .card__icon-button:has(.is-liked) .card__like-button {
