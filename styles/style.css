@@ -25,13 +25,13 @@
 
 .header__logo {
   font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
-  margin-bottom: 20px;
+  margin-block-end: 20px;
   text-transform: uppercase;
 }
 
 .header__title {
   font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
-  margin-bottom: 25px;
+  margin-block-end: 25px;
   text-transform: uppercase;
 }
 
