@@ -82,6 +82,7 @@
 }
 
 @keyframes moving {
+  
   from {
     transform: translateX(0);
   }
@@ -165,6 +166,7 @@
   (text-stroke: 1px var(--background-color, #fff)) or
     (-webkit-text-stroke: 1px var(--background-color, #fff))
 ) {
+
   .card__wrapper::after {
     -webkit-text-stroke: 1px var(--background-color, #fff);
     text-stroke: 1px var(--background-color, #fff);
@@ -256,7 +258,8 @@
 }
 
 .card__like-button::before,
-.footer__button:before {
+.footer__button::before,
+.dialog__button::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -270,12 +273,14 @@
 }
 
 .card__like-button:hover::before,
-.footer__button:hover::before {
+.footer__button:hover::before,
+.dialog__button:hover::before {
   transform: translateX(0);
 }
 
 .card__like-button:hover .button__text,
-.footer__button:hover .button__text {
+.footer__button:hover .button__text,
+.dialog__button:hover .button__text {
   color: var(--background-color, #fff);
 }
 
@@ -338,12 +343,14 @@
 }
 
 @keyframes increase {
+
   to {
     transform: scale(1.2);
   }
 }
 
 @keyframes sparks {
+
   to {
     opacity: 1;
   }
