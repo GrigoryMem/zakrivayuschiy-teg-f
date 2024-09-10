@@ -514,6 +514,10 @@ dialog::backdrop {
     max-height: 375px;
   }
 
+  .card__like-button {
+    padding: 13px 0 9px;
+  }
+
   .footer__button {
     flex-direction: column;
     gap: 11px;
