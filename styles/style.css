@@ -511,7 +511,16 @@ dialog::backdrop {
 @media (width<=375px) {
 
   .card__image img {
-    max-height: 375px;
+    border-block-start: 2px solid var(--main-color, #000);
+    height: 371px;
+  }
+
+  .card__label {
+   inset-inline-end: 13px;
+  }
+
+  .card__content {
+    border-block-start: 4px solid var(--main-color, #000);
   }
 
   .card__like-button {
@@ -521,5 +530,11 @@ dialog::backdrop {
   .footer__button {
     flex-direction: column;
     gap: 11px;
+    padding: 15px 20px;
+  }
+
+  .footer__button .floppy {
+    width: 28px;
+    height: 28px;
   }
 }
