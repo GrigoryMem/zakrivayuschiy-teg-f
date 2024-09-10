@@ -26,6 +26,11 @@ li {
   padding: 0;
 }
 
+h2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 a {
   color: inherit;
 }
