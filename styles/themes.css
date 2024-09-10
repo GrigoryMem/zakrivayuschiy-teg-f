@@ -38,6 +38,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+  
   :root {
     --fw-text: 400;
     --fw-title: 700;
