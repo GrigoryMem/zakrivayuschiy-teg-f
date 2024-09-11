@@ -162,7 +162,7 @@
     (-webkit-text-stroke: 1px var(--background-color, #fff))
 ) {
 
-  .card__wrapper::after {
+  .card__label {
     -webkit-text-stroke: 1px var(--background-color, #fff);
     text-stroke: 1px var(--background-color, #fff);
     text-shadow: none;
@@ -240,6 +240,7 @@
   background-color: var(--background-color, #fff);
   padding: 12px 0;
   min-width: 130px;
+  line-height: 0.9;
   border: 2px solid currentColor;
   transition: box-shadow 0.3s ease;
   overflow: hidden;
@@ -427,20 +428,16 @@ dialog::backdrop {
 @media (width<=375px) {
 
   .card__image img {
-    border-block-start: 2px solid var(--main-color, #000);
     height: 371px;
+
   }
 
   .card__label {
    inset-inline-end: 13px;
   }
 
-  .card__content {
-    border-block-start: 4px solid var(--main-color, #000);
-  }
-
   .card__like-button {
-    padding: 13px 0 9px;
+    padding: 12px 0 10px;
   }
 
   .footer__button {
