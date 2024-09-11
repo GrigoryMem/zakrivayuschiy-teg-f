@@ -51,7 +51,6 @@
   text-align: left;
 }
 
-
 .theme-menu__button {
   display: block;
   color: var(--main-color, #000);
@@ -76,7 +75,6 @@
 }
 
 @keyframes moving {
-  
   from {
     transform: translateX(0);
   }
@@ -113,7 +111,6 @@
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
 }
-
 
 /* Article card */
 
@@ -163,7 +160,6 @@
   (text-stroke: 1px var(--background-color, #fff)) or
     (-webkit-text-stroke: 1px var(--background-color, #fff))
 ) {
-
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--background-color, #fff);
@@ -245,7 +241,7 @@
   z-index: 5;
   border: 2px solid currentColor;
   overflow: hidden;
-  color:var(--main-color,#000);
+  color: var(--main-color, #000);
   font-family: var(--accent-font, 'Press Start 2P'), system-ui, fantasy;
   font-weight: var(--fw-text, 400);
   font-size: 14px;
@@ -280,10 +276,10 @@
 }
 
 .card__icon-button {
+  padding-top: 5px;
   outline: 2px solid transparent;
   transition: outline 0.3s ease;
   inline-size: 38px;
-  padding-top: 5px
 }
 
 .card__icon-button:focus-visible {
@@ -386,20 +382,18 @@ dialog::backdrop {
 }
 
 @media (max-width: 700px) {
-  
   .theme-menu__item {
     padding-inline-start: 25px;
   }
 }
 
 @media (width<=375px) {
-
   .card__content {
     gap: 24px;
   }
 
   .card__label {
-   inset-inline-end: 13px;
+    inset-inline-end: 13px;
   }
 
   .card__icon-button {

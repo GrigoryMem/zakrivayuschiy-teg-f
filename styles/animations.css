@@ -64,7 +64,7 @@
 
 .like-icon.is-liked {
   transform-origin: center;
-  animation: increase  0.3s 0.1s ease-in  alternate; 
+  animation: increase 0.3s 0.1s ease-in alternate;
 }
 
 .like-icon.is-liked .core {
@@ -90,17 +90,13 @@
 }
 
 @keyframes increase {
-
   to {
     transform: scale(1.5);
   }
 }
 
 @keyframes sparks {
-
   to {
     opacity: 1;
   }
 }
-
-

@@ -21,7 +21,7 @@
   /* svg */
 
   --sparks-color: var(--icon-liked-color);
-  --core-color:var(--main-color);
-  --fill-body:var(--main-color);
+  --core-color: var(--main-color);
+  --fill-body: var(--main-color);
   --contour: var(--main-color);
 }
