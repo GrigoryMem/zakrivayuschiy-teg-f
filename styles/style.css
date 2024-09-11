@@ -178,34 +178,33 @@
   display: block;
 }
 
-.card:nth-of-type(2) .card__image img {
+.filter-brightness {
   filter: brightness(300%);
 }
 
-.card:nth-of-type(3) .card__image img {
+.filter-contrast {
   filter: contrast(500%);
 }
 
-.card:nth-of-type(4) .card__image img {
+.filter-blur {
   filter: blur(5px);
 }
 
-.card:nth-of-type(5) .card__image img {
+.filter-opacity {
   filter: opacity(0.5);
 }
 
-.card:nth-of-type(6) .card__image img {
+.filter-grayscale {
   filter: grayscale(0.9);
 }
 
-.card:nth-of-type(7) .card__image img {
+.filter-saturate {
   filter: saturate(190%);
 }
 
-.card:nth-of-type(8) .card__image img {
+.filter-multiple {
   filter: hue-rotate(90deg) sepia(90%)
     drop-shadow(15px 15px 5px rgba(0, 0, 0, 0.6)) grayscale(0.4);
-  object-position: right;
 }
 
 .card__content {
