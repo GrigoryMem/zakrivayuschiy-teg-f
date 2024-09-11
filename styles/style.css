@@ -24,6 +24,7 @@
 }
 
 .header__logo {
+  display: block;
   margin-block-end: 20px;
   font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
   text-transform: uppercase;
