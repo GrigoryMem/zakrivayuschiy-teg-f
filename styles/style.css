@@ -176,7 +176,6 @@
   object-fit: cover;
   object-position: center;
   display: block;
-  height: 696px;
 }
 
 .card:nth-of-type(2) .card__image img {
@@ -426,11 +425,6 @@ dialog::backdrop {
 
 
 @media (width<=375px) {
-
-  .card__image img {
-    height: 371px;
-
-  }
 
   .card__label {
    inset-inline-end: 13px;
