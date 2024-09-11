@@ -130,12 +130,12 @@
   line-height: 1.21;
   padding: 4px 10px 5px;
   font-variation-settings: 'wght' var(--fw-title, 700);
-  font-weight: var(--fw-title, 700);
 }
 
 .card__image {
   position: relative;
   inset: 0;
+  border-block-start: 2px solid currentColor;
 }
 
 .card__label {
@@ -238,7 +238,7 @@
 .card__like-button {
   position: relative;
   background-color: var(--background-color, #fff);
-  padding: 13px 0;
+  padding: 12px 0;
   min-width: 130px;
   border: 2px solid currentColor;
   transition: box-shadow 0.3s ease;
