@@ -332,7 +332,7 @@
 
 .dialog {
   gap: 30px;
-  min-width: 353px;
+  min-inline-size: 353px;
   border: 2px solid currentColor;
   padding: 26px 30px;
   color: var(--main-color, #000);
