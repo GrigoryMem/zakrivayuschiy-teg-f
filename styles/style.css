@@ -329,16 +329,13 @@
 /* dialog  */
 
 .dialog {
+  position: fixed;
+  inset: 0;
   gap: 30px;
   border: 2px solid currentColor;
-  padding: 26px 30px;
+  padding: 24px 30px;
   color: var(--main-color, #000);
   background-color: var(--background-color, #fff);
-  min-inline-size: 353px;
-}
-
-.dialog[opened] {
-  display: flex;
 }
 
 .dialog:not([open]) {
@@ -362,11 +359,12 @@
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+  max-inline-size: 235px;
 }
 
 .dialog__button {
   position: relative;
-  padding: 12px 0;
+  padding: 10px 0 12px;
   text-transform: uppercase;
   inline-size: 100%;
 }
@@ -413,5 +411,18 @@ dialog::backdrop {
   .save__button .floppy {
     width: 28px;
     height: 28px;
+  }
+
+  .dialog {
+    padding: 32px 42px 30px;
+  }
+
+  .dialog__text {
+    /* padding-block-start: 5px; */
+    max-inline-size: 198px;
+  }
+
+  .dialog__message {
+    padding-block-start: 0;
   }
 }
