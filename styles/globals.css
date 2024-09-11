@@ -70,21 +70,15 @@ ol {
   outline: none;
 }
 
-.main-button {
-  z-index: 5;
-  border: 2px solid currentColor;
-  overflow: hidden;
-  color:var(--main-color,#000);
-  font-family: var(--accent-font, 'Press Start 2P'), system-ui, fantasy;
-  font-weight: var(--fw-text, 400);
-  font-size: 14px;
-  line-height: 0.9;
-  background-color: var(--background-color, #fff);
-  transition: box-shadow 0.3s ease;
-}
-
 .content-size {
   margin: auto;
   padding: 0 5px;
   inline-size: min(100%, var(--layout-size, 700px));
+}
+
+.center-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
