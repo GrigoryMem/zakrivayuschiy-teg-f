@@ -8,7 +8,7 @@
   --background-color: #fff;
   --main-color: #000;
   --accent-color: var(--background-color);
-  --red: #ff0000;
+  --icon-liked-color: #ff0000;
   --layout-size: 700px;
   --background-image: repeating-linear-gradient(
       to right,
@@ -20,7 +20,7 @@
 
   /* svg */
 
-  --sparks-color: var(--red);
+  --sparks-color: var(--icon-liked-color);
   --core-color:var(--main-color);
   --fill-body:var(--main-color);
   --contour: var(--main-color);
