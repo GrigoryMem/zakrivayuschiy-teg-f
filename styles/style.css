@@ -337,7 +337,6 @@
   padding: 26px 30px;
   color: var(--main-color, #000);
   background-color: var(--background-color, #fff);
-  transition: opacity 0.3s ease-in-out;
 }
 
 .dialog[opened] {
