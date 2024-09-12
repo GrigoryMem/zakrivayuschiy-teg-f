@@ -18,10 +18,32 @@
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
-  /* svg */
+  /* svg heart icon initial colors*/
 
   --sparks-color: var(--icon-liked-color);
   --core-color: var(--main-color);
   --fill-body: var(--main-color);
   --contour: var(--main-color);
 }
+
+/* svg heart icon: for animation.css */
+
+/* active: .core  and .main-body */
+
+.like-icon:active {
+  --core-color: var(--icon-liked-color);
+  --fill-body: var(--icon-liked-color);
+}
+
+/* .is-liked: .core , .main-body, .contour  */
+
+.like-icon.is-liked {
+  --core-color: var(--icon-liked-color);
+  --fill-body: var(--icon-liked-color);
+  --contour: var(--icon-liked-color);
+}
+
+
+
+
+
