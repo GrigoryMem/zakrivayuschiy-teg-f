@@ -74,16 +74,6 @@
   inset-inline-start: -22px;
 }
 
-@keyframes moving {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(4px);
-  }
-}
-
 .theme-menu__button:disabled,
 .theme-menu__button:hover,
 .theme-menu__button:disabled::before,
