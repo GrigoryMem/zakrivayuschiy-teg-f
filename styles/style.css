@@ -160,6 +160,7 @@
   (text-stroke: 1px var(--background-color, #fff)) or
     (-webkit-text-stroke: 1px var(--background-color, #fff))
 ) {
+
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--background-color, #fff);
@@ -167,7 +168,7 @@
   }
 }
 
-.card__image img {
+.picture {
   position: relative;
   z-index: 5;
   display: block;
